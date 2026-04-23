@@ -1,14 +1,3 @@
----
-title: Stutter Detection Using Prosody
-emoji: 🌖
-colorFrom: gray
-colorTo: pink
-sdk: static
-pinned: false
-license: gpl-3.0
-short_description: 'Stutter Detection using MFCC''s and Prosodic Features '
----
-
 # Stutter Detection Using Prosody
 
 This project implements a robust speech feature extraction pipeline for automated stutter detection, focusing on prosodic and acoustic features. It utilizes the **SEP-28k** dataset and extracts fine-grained frame-level and clip-level features to distinguish between fluent and stuttered speech.
@@ -35,14 +24,13 @@ mkdir -p output
 huggingface-cli download bropal/stutter_detection_prosody --local-dir output/ --repo-type space
 ```
 
-> [!TIP]
 > Manual downloads are available at:
 > - [Kaggle: SEP-28k Maintained](https://www.kaggle.com/datasets/vudominhgiang/sep-28k-maintained)
 > - [Hugging Face: Stutter Detection Prosody (Output)](https://huggingface.co/bropal/stutter_detection_prosody/tree/main/output)
 
 ---
 
-## 🛠 Features & Methodology
+## Features & Methodology
 
 The pipeline extracts several layers of speech features based on prosodic dynamics and spectral characteristics:
 
