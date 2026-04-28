@@ -2,6 +2,21 @@
 
 This project implements a robust speech feature extraction pipeline for automated stutter detection, focusing on prosodic and acoustic features. It utilizes the **SEP-28k** dataset and extracts fine-grained frame-level and clip-level features to distinguish between fluent and stuttered speech.
 
+# Results
+![Results](plot.png)
+
+* The confusion matrix indicates **balanced classification accuracy** across both classes:
+
+  * **84.7%** of **No Stutter** samples were correctly identified.
+  * **86.7%** of **Stutter** samples were correctly identified.
+* The ROC curve achieved an **AUC of 0.915**, showing excellent ability to distinguish between stutter and non-stutter speech.
+* The prediction probability distribution shows:
+
+  * Most **No Stutter** samples clustered near **0**.
+  * Most **Stutter** samples clustered near **1**.
+* This indicates the model makes **confident and reliable predictions** with limited ambiguity.
+
+
 ## Quick Start: Data Acquisition
 
 To set up the project environment, run the following commands to download the dataset and pre-extracted features.
